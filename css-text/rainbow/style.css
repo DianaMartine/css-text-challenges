@@ -1,7 +1,6 @@
 @import url('//db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
 
 :root {
-    --background: black;
     --axis-x: 1px;
     --axis-y: 1rem;
     --delay: 10;
@@ -22,13 +21,14 @@
   }
   
   body {
-    background-color: var(--background);
+    background: url('https://wallpapercave.com/wp/UbwGnCK.jpg');
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Super Mario 256', sans-serif;
     font-weight: bold;
-    height: 100vh;
+    height: 97vh;
   }
   
   .c-rainbow {
