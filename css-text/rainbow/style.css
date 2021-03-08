@@ -1,0 +1,118 @@
+@import url('//db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256');
+
+:root {
+    --background: black;
+    --axis-x: 1px;
+    --axis-y: 1rem;
+    --delay: 10;
+    --black: black;
+    --white: white;
+    --orange: orange;
+    --red: red;
+    --violet: violet;
+    --blue: blue;
+    --green: green;
+    --yellow: yellow;
+    --foreground: var(--white);
+  }
+  
+  html,
+  body {
+    font-size: 2rem;
+  }
+  
+  body {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Super Mario 256', sans-serif;
+    font-weight: bold;
+    height: 100vh;
+  }
+  
+  .c-rainbow {
+    counter-reset: rainbow;
+    position: relative;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .c-rainbow__layer {
+    --text-color: var(--foreground);
+    counter-increment: rainbow;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black), 4px 4px 0 rgba(0, 0, 0, 0.2);
+    animation: rainbow 1.8s ease-in-out infinite;
+  }
+  .c-rainbow__layer:nth-child(1) {
+    animation-delay: calc(1 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 1);
+    z-index: -10;
+  }
+  .c-rainbow__layer:nth-child(2) {
+    animation-delay: calc(2 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 2);
+    z-index: -20;
+  }
+  .c-rainbow__layer:nth-child(3) {
+    animation-delay: calc(3 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 3);
+    z-index: -30;
+  }
+  .c-rainbow__layer:nth-child(4) {
+    animation-delay: calc(4 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 4);
+    z-index: -40;
+  }
+  .c-rainbow__layer:nth-child(5) {
+    animation-delay: calc(5 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 5);
+    z-index: -50;
+  }
+  .c-rainbow__layer:nth-child(6) {
+    animation-delay: calc(6 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 6);
+    z-index: -60;
+  }
+  .c-rainbow__layer:nth-child(7) {
+    animation-delay: calc(7 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 7);
+    z-index: -70;
+  }
+  .c-rainbow__layer:not(:first-child) {
+    position: absolute;
+    top: 0;
+  }
+  .c-rainbow__layer--white {
+    --text-color: var(--white);
+  }
+  .c-rainbow__layer--orange {
+    --text-color: var(--orange);
+  }
+  .c-rainbow__layer--red {
+    --text-color: var(--red);
+  }
+  .c-rainbow__layer--violet {
+    --text-color: var(--violet);
+  }
+  .c-rainbow__layer--blue {
+    --text-color: var(--blue);
+  }
+  .c-rainbow__layer--green {
+    --text-color: var(--green);
+  }
+  .c-rainbow__layer--yellow {
+    --text-color: var(--yellow);
+  }
+  
+  @keyframes rainbow {
+    0%, 100% {
+      transform: translateY(var(--axis-y));
+    }
+    50% {
+      transform: translateY(calc(var(--axis-y) * -.5));
+    }
+  }
