@@ -13,3 +13,9 @@ Desafio de css - animação com textos
 <img height="145em" src="https://github.com/DianaMartine/css-text-challenges/blob/main/css-text/assets/rainbowsupermario.gif">
 <p>Link <strong>Rainbow Super Mario</strong> in <a href="https://codepen.io/dianamartine/pen/vYyVmNm" target="_blank">Codepen.io</a>
 <hr>
+
+### day #3 - Text Glow Red
+
+<img height="145em" src="https://github.com/DianaMartine/css-text-challenges/blob/main/css-text/assets/text-glow-red.gif">
+<p>Link <strong>Text Glow Red</strong> in <a href="https://codepen.io/dianamartine/pen/MWJbrBP" target="_blank">Codepen.io</a>
+<hr>
